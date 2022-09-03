@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(53, 167, 234);
+  font-family: "Libre Franklin", sans-serif;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  color: rgb(215, 215, 215);
+  margin: 2rem;
+}
+
+.container {
+  background-color: rgba(13, 9, 38, 0.895);
+  width: 90%;
+
+  height: 50rem;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.password {
+  width: 90%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 4px;
+
+  padding: 1rem 1.5rem;
+}
+.fa-copy {
+  width: 10%;
+  font-size: 2rem;
+  color: rgb(53, 167, 234);
+  padding: 0.7rem 0.7rem 0.7rem 0.2rem;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.fa-copy:hover {
+  color: #fff;
+}
+
+.password-display {
+  display: flex;
+  align-items: center;
+  background-color: rgba(54, 50, 85, 0.895);
+  width: 100%;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+}
+
+.length-password-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.label-range {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.range-value-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.range {
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+  height: 3px;
+  background-color: rgb(53, 167, 234);
+  border-radius: 50%;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #000;
+  cursor: pointer;
+  border: 2px solid rgb(53, 167, 234);
+}
+
+#range-value {
+  color: rgb(53, 167, 234);
+  font-size: 2.5rem;
+}
+
+.checkbox-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.checkbox-label {
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(53, 167, 234);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s, display 0.3s;
+}
+
+.checkbox:hover {
+  background-color: rgb(38, 120, 167);
+}
+
+.checkbox::after {
+  font-family: "Font Awesome 5 free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 2rem;
+  display: none;
+}
+
+.checkbox:checked {
+  background-color: rgb(53, 167, 234);
+}
+.checkbox:checked::after {
+  display: block;
+}
+
+.test-password-box {
+  background-color: rgba(54, 50, 85, 0.895);
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  border-radius: 8px;
+}
+
+.test-password-text {
+  color: rgb(173, 173, 173);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 40rem;
+  }
+}

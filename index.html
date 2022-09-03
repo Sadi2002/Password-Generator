@@ -4,8 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f840a980ae.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 class="title">Password Generator</h1>
+      <div class="password-display">
+        <span class="password"></span>
+        <i class="fa-solid fa fa-copy"></i>
+      </div>
+      <div class="length-password-box">
+        <div class="range-value-box">
+          <label class="label-range" for="length">Character Length</label>
+          <span id="range-value">10</span>
+        </div>
+        <input
+          name="length"
+          type="range"
+          min="4"
+          max="16"
+          class="range"
+          step="1"
+          value="10"
+          onchange="rangeSlide(this.value)"
+          onmousemove="rangeSlide(this.value)"
+        />
+      </div>
+      <div class="checkbox-box">
+        <div class="checkbox-row">
+          <input class="checkbox" type="checkbox" name="upperCase" />
+          <label class="checkbox-label" for="upperCase"
+            >Include Uppercase Letters</label
+          >
+        </div>
+        <div class="checkbox-row">
+          <input class="checkbox" type="checkbox" name="upperCase" />
+          <label class="checkbox-label" for="upperCase"
+            >Include Lowercase Letters</label
+          >
+        </div>
+        <div class="checkbox-row">
+          <input class="checkbox" type="checkbox" name="upperCase" />
+          <label class="checkbox-label" for="upperCase">Include Numbers</label>
+        </div>
+        <div class="checkbox-row">
+          <input class="checkbox" type="checkbox" name="upperCase" />
+          <label class="checkbox-label" for="upperCase">Include Symbols</label>
+        </div>
+      </div>
+      <div class="test-password-box">
+        <span class="test-password-text">strength</span>
+        <div class="test-password-scale">
+          <span class="scale-text">Medium</span>
+          <div class="scale-box"></div>
+          <div class="scale-box"></div>
+          <div class="scale-box"></div>
+          <div class="scale-box"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
