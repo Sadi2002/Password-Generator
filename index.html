@@ -43,36 +43,35 @@
       </div>
       <div class="checkbox-box">
         <div class="checkbox-row">
-          <input class="checkbox" type="checkbox" name="upperCase" />
-          <label class="checkbox-label" for="upperCase"
-            >Include Uppercase Letters</label
-          >
-        </div>
-        <div class="checkbox-row">
-          <input class="checkbox" type="checkbox" name="upperCase" />
+          <input
+            class="checkbox lower"
+            type="checkbox"
+            name="upperCase"
+            checked
+          />
           <label class="checkbox-label" for="upperCase"
             >Include Lowercase Letters</label
           >
         </div>
         <div class="checkbox-row">
-          <input class="checkbox" type="checkbox" name="upperCase" />
+          <input class="checkbox upper" type="checkbox" name="upperCase" />
+          <label class="checkbox-label" for="upperCase"
+            >Include Uppercase Letters</label
+          >
+        </div>
+        <div class="checkbox-row">
+          <input class="checkbox number" type="checkbox" name="upperCase" />
           <label class="checkbox-label" for="upperCase">Include Numbers</label>
         </div>
         <div class="checkbox-row">
-          <input class="checkbox" type="checkbox" name="upperCase" />
+          <input class="checkbox symbol" type="checkbox" name="upperCase" />
           <label class="checkbox-label" for="upperCase">Include Symbols</label>
         </div>
       </div>
-      <div class="test-password-box">
-        <span class="test-password-text">strength</span>
-        <div class="test-password-scale">
-          <span class="scale-text">Medium</span>
-          <div class="scale-box"></div>
-          <div class="scale-box"></div>
-          <div class="scale-box"></div>
-          <div class="scale-box"></div>
-        </div>
-      </div>
+
+      <button class="generate-btn">
+        Generate &nbsp &nbsp <i class="fa-regular fa fa-arrow-right"></i>
+      </button>
     </div>
 
     <script src="script.js"></script>
