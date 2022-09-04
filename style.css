@@ -216,6 +216,11 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 375px) {
+  .container {
+    width: 35rem;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container {
     width: 40rem;
