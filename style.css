@@ -220,12 +220,17 @@ body {
   .container {
     width: 35rem;
   }
+<<<<<<< HEAD
 
   .test-password-box {
     padding: 0 0 0 3rem;
   }
 }
 @media screen and (min-width: 1400) {
+=======
+}
+@media screen and (min-width: 1440px) {
+>>>>>>> 09ec9157c652ade755baf4a27e8285907c11fb3a
   .container {
     width: 40rem;
   }
